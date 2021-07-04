@@ -1,4 +1,8 @@
-//jshint esversion:6
+var superheroes = require('superheroes');
+var supervillains = require('supervillains');
 
-const fs = require("fs");
-fs.copyFileSync("file1.txt", "file2.txt");
+var mySuperHeroName = superheroes.random();
+var mySuperVillainName = supervillains.random();
+
+console.log(mySuperHeroName);
+console.log(mySuperVillainName);
